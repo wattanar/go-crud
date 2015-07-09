@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>GO Example</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+              mdl-layout--fixed-header">
+	    <header class="mdl-layout__header">
+	      <div class="mdl-layout__header-row">
+	      	<!-- Title -->
+      		<span class="mdl-layout-title">GO Example</span>
+	        <div class="mdl-layout-spacer"></div>
+	        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+	                    mdl-textfield--floating-label mdl-textfield--align-right">
+	   
+	        </div>
+	      </div>
+	    </header>
+	    <div class="mdl-layout__drawer">
+	      <nav class="mdl-navigation">
+	        <a class="mdl-navigation__link" href="/">Home</a>
+	        <a class="mdl-navigation__link" href="/about">About</a>
+	      </nav>
+	    </div>
+	    <main class="mdl-layout__content mdl-color--grey-100">
+	      <div class="page-content">
+	      	<!-- Your content goes here -->
+	      	<div class="mdl-grid">
+				<div class="mdl-cell mdl-cell--12-col">
+				  	<div class="mdl-card mdl-shadow--2dp" style="width:100%;">
+				  		{{ yield }}
+					</div>
+				</div>
+			</div>
+	      	
+	      </div>
+	    </main>
+  	</div>
+	
+</body>
+</html>

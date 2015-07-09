@@ -1,0 +1,31 @@
+
+<div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Edit Users</h2>
+</div>
+<div class="mdl-card__supporting-text">
+	
+	{{ range . }}
+		<form action="/update" method="POST">
+
+			<div class="mdl-textfield mdl-js-textfield">
+			    <input class="mdl-textfield__input" type="text" name="UserID" value="{{ .Id }}" id="UserID" readonly/>
+			    <label class="mdl-textfield__label" for="UserID">ID</label>
+			</div>
+
+			<div class="mdl-textfield mdl-js-textfield">
+			    <input class="mdl-textfield__input" type="text" name="UserName" value="{{ .Name }}" id="UserName" />
+			    <label class="mdl-textfield__label" for="UserName">Name</label>
+			</div>
+
+			<div class="mdl-textfield mdl-js-textfield">
+			    <input class="mdl-textfield__input" type="text" name="UserAge" value="{{ .Age }}" id="UserAge" />
+			    <label class="mdl-textfield__label" for="UserAge">Age</label>
+			</div>
+			<br>
+			<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+			  Update
+			</button>
+
+	    </form>
+	{{ end }}
+</div>
